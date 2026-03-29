@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const fs = require("fs");
 const PORT = 3100;
-const data = fs.readFileSync("GlobalMovies.json");
+const data = fs.readFileSync("./GlobalMovies.json");
 const movies = JSON.parse(data);
 app.use(express.static("public"));
 app.use(cors());
